@@ -13,7 +13,7 @@ public class Main {
         String password = input.nextLine();
 
         //We will update later our Security System
-        if(username.equals("Team Debugger") && password.equals("Team"))
+//        if(username.equals("Team Debugger") && password.equals("Team"))
         {
             Menu menu = new Menu();
         }
