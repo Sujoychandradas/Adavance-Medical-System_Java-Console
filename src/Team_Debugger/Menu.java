@@ -6,7 +6,7 @@ public  class Menu {
     Menu() {
         int n;
         // To implement month into Array
-        String months[] = {
+        String[] months = {
 
                 "Jan",
                 "Feb",
@@ -73,7 +73,9 @@ public  class Menu {
                     Exit exit = new Exit();
                     break;
                 }
+                default:
+                    System.out.println("Invalid option!!. Please enter again");
             }
-        } while (n != 6);
+        } while (n !=6);
     }
 }
