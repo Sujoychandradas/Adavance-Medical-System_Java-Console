@@ -3,7 +3,7 @@ package Team_Debugger;
 public class AmbulanceService {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
-        System.out.println("Which hospital you want yourself or your patients to get admitted?"); 
+        System.out.println("Which hospital you want yourself or your patients to get admitted in?"); 
         System.out.println("1.OSMANI MEDICAL");
         System.out.println("2.NOORJAHAN");
         System.out.println("3.POPULAR");
