@@ -1,5 +1,5 @@
 package Team_Debugger;
-
+import java.util.Scanner;
 public class AmbulanceService {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
