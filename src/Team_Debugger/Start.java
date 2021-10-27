@@ -1,5 +1,5 @@
 package Team_Debugger;
 
-public class Exit {
+public class Start {
 
 }
