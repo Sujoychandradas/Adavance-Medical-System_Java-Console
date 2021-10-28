@@ -37,4 +37,11 @@ public class LoginDisplay {
         System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t1. YES");
         System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t2. NO");
     }
+
+    void confirm()
+    {
+        System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t#### CONFIRMED \n");
+        System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t1. YES");
+        System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t2. NO");
+    }
 }

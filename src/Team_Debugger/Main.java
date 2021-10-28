@@ -20,6 +20,13 @@ public class Main {
         Vector<String> password = new Vector<>();
         Vector<String> phone1 = new Vector<>();
 
+
+        Vector<String> medicine = new Vector<>();
+        Vector<String> cardiologist = new Vector<>();
+        Vector<String> gynecologist = new Vector<>();
+        Vector<String> orthopedic = new Vector<>();
+        Vector<String> neurologist = new Vector<>();
+
         username.add("Sujoy");
         username.add("Rishad");
         username.add("Amio");
@@ -61,6 +68,35 @@ public class Main {
 
         //File
         DoctorList doctorList = new DoctorList();
+
+
+        //Doctor name storing on vector
+        medicine.add("Dr.Murad");
+        medicine.add("Dr.Fariha");
+        medicine.add("Dr.Rotan");
+        medicine.add("Dr.Kashfi");
+        medicine.add("Dr.Anika");
+
+        cardiologist.add("Dr.Sohel");
+        cardiologist.add("Dr.Resham");
+        cardiologist.add("Dr.Ravi");
+
+        gynecologist.add("Dr.Marufa");
+        gynecologist.add("Dr.Shopna");
+        gynecologist.add("Dr.Roshni");
+        gynecologist.add("Dr.Nilima");
+        gynecologist.add("Dr.Oyshee");
+        gynecologist.add("Dr.Liza");
+
+        orthopedic.add("Dr.Halima");
+        orthopedic.add("Dr.Asif");
+        orthopedic.add("Dr.Rahi");
+
+        neurologist.add("Dr.Shakkor");
+        neurologist.add("Dr.Protiva");
+        neurologist.add("Dr.Taneam");
+        neurologist.add("Dr.Kashem");
+        neurologist.add("Dr.Afroja");
 
         lg.welcomeScreen();
 
@@ -210,11 +246,411 @@ public class Main {
                                 System.out.print("\t\t\t\t\t\t\t\t\t\t\t\t\tEnter your choose (1-5):  ");
                                 int work = input.nextInt();
 
-                                if(work == 1)
+                                if (work == 1)
                                 {
                                     doctorList.displayDoctor();
+                                }
+                                else if(work == 2)
+                                {
+                                    System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t*\tWhat kind of doctor do you want?");
+                                    System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t \t1.Medicine");
+                                    System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t \t2.Cardiologist");
+                                    System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t \t3.Gynecologist");
+                                    System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t \t4.Orthopedic");
+                                    System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t \t5.Neurologist");
+                                    System.out.print("\t\t\t\t\t\t\t\t\t\t\t\t \tEnter your choice(1-5): ");
+
+                                    int doctype;
+                                    doctype = input.nextInt();
+                                    if (doctype == 1)
+                                    {
+                                        System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t \tList of Medicine specialist doctors:");
+                                        System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t \tNo.\tName\tAge \tGender\tPhone number\tTime \t\tCity\t\tDays\n" +
+                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t1.\tMurad\t27\t\tMale\t017123456749\t12am – 4pm\tHabiganj\tSun – Fri\n" +
+                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t2.\tFariha\t33\t\tFemale\t018123456729\t7pm – 12pm\tDhaka\t\tMon-Tue\n" +
+                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t3.\tRotan\t61\t\ttMale\t019987654123\t12am – 4pm\tSylhet\t\tThu – Fri\n" +
+                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t4.\tKashfi\t26\t\tFemale\t017748596123\t10am – 1pm\tSylhet\t\tMon-Tue\n" +
+                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t5.\tAnika \t39\t\tFemale\t013965847321\t2pm – 6 pm\tDhaka\t\tSun – Fri");
+
+                                        System.out.print("\t\t\t\t\t\t\t\t\t\t\t\t \tEnter your choice(1-5): ");
+
+                                        int med = input.nextInt();
+
+                                        if(med == 1)
+                                        {
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
+
+                                            lg.confirm();
+
+                                            int murad = input.nextInt();
+                                            if(murad == 1)
+                                            {
+                                                System.out.println("Confirm Payment: ");
+
+
+                                            }
+                                            else {
+                                                break;
+                                            }
+                                        }
+                                        else if(med == 2)
+                                        {
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
+
+                                            lg.confirm();
+
+                                            int fariha = input.nextInt();
+                                            if(fariha == 1)
+                                            {
+                                                System.out.println("Confirm Payment: ");
+
+
+                                            }
+                                            else {
+                                                break;
+                                            }
+                                        }
+
+                                        else if(med == 3)
+                                        {
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
+
+                                            lg.confirm();
+
+                                            int rotan = input.nextInt();
+                                            if(rotan == 1)
+                                            {
+                                                System.out.println("Confirm Payment: ");
+
+
+                                            }
+                                            else {
+                                                break;
+                                            }
+                                        }
+                                        else if(med == 4)
+                                        {
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
+
+                                            lg.confirm();
+
+                                            int kashfi = input.nextInt();
+                                            if(kashfi == 1)
+                                            {
+                                                System.out.println("Confirm Payment: ");
+
+
+                                            }
+                                            else {
+                                                break;
+                                            }
+                                        }
+                                        else if(med == 5)
+                                        {
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
+
+                                            lg.confirm();
+
+                                            int anika = input.nextInt();
+                                            if(anika == 1)
+                                            {
+                                                System.out.println("Confirm Payment: ");
+
+
+                                            }
+                                            else {
+                                                break;
+                                            }
+                                        }else
+                                        {
+                                            break;
+                                        }
+                                    }
+                                    else if (doctype == 2)
+                                    {
+                                        System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t \tList of Cardiology specialist doctors:");
+                                        System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t \tNo.\tName\tAge \tGender\tPhone number\tTime \t\tCity\t\tDays\n" +
+                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t1.\tSohel\t32\t\tMale\t017123456789\t12am – 4pm\tSylhet\t\tSun – Fri\n" +
+                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t2.\tReshama\t29\t\tFemale\t018123456789\t7pm – 12pm\tDhaka\t\tMon-Wed\n" +
+                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t3.\tRavi\t56\t\tMale\t019987654123\t12am – 4pm\tSylhet\t\tSun – Fri");
+
+
+                                        System.out.print("\t\t\t\t\t\t\t\t\t\t\t\t \tEnter your choice(1-5): ");
+
+                                        int car = input.nextInt();
+
+                                        if(car == 1)
+                                        {
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
+
+                                            lg.confirm();
+
+                                            int sohel = input.nextInt();
+                                            if(sohel == 1)
+                                            {
+                                                System.out.println("Confirm Payment: ");
+
+
+                                            }
+                                            else {
+                                                break;
+                                            }
+                                        }
+                                        else if(car == 2)
+                                        {
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
+
+                                            lg.confirm();
+
+                                            int resham = input.nextInt();
+                                            if(resham == 1)
+                                            {
+                                                System.out.println("Confirm Payment: ");
+
+
+                                            }
+                                            else {
+                                                break;
+                                            }
+                                        }
+
+                                        else if(car == 3)
+                                        {
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
+
+                                            lg.confirm();
+
+                                            int ravi = input.nextInt();
+                                            if(ravi == 1)
+                                            {
+                                                System.out.println("Confirm Payment: ");
+
+
+                                            }
+                                            else {
+                                                break;
+                                            }
+                                        }
+                                        else {
+                                            break;
+                                        }
+                                    }
+                                    else if (doctype == 3)
+                                    {
+                                        System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t \tList of Gynecology specialist doctors:");
+                                        System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t \tNo.\tName\tAge \tGender\tPhone number\tTime \t\tCity\t\tDays\n" +
+                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t1.\tMarufa\t27\t\tFemale\t017123456749\t12am – 4pm\tHabiganj\tSun – Fri\n" +
+                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t2.\tShopna\t33\t\tFemale\t018123456729\t7pm – 12pm\tDhaka\t\tMon-Tue\n" +
+                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t3.\tRoshni\t61\t\tFemale\t019987654123\t12am – 4pm\tSylhet\t\tThu – Fri\n" +
+                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t4.\tNilima\t26\t\tFemale\t017748596123\t10am – 1pm\tSylhet\t\tMon-Tue\n" +
+                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t5.\tLiza\t36\t\tFemale\t017369852147\t7pm – 12pm\tDhaka\t\tMon-Wed");
+
+                                        System.out.print("\t\t\t\t\t\t\t\t\t\t\t\t \tEnter your choice(1-5): ");
+
+                                        int gyno = input.nextInt();
+
+                                        if(gyno == 1)
+                                        {
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
+
+                                            lg.confirm();
+
+                                            int murad = input.nextInt();
+                                            if(murad == 1)
+                                            {
+                                                System.out.println("Confirm Payment: ");
+
+
+                                            }
+                                            else {
+                                                break;
+                                            }
+                                        }
+                                        else if(gyno == 2)
+                                        {
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
+
+                                            lg.confirm();
+
+                                            int fariha = input.nextInt();
+                                            if(fariha == 1)
+                                            {
+                                                System.out.println("Confirm Payment: ");
+
+                                            }
+                                            else {
+                                                break;
+                                            }
+                                        }
+
+                                        else if(gyno == 3)
+                                        {
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
+
+                                            lg.confirm();
+
+                                            int rotan = input.nextInt();
+                                            if(rotan == 1)
+                                            {
+                                                System.out.println("Confirm Payment: ");
+
+
+                                            }
+                                            else {
+                                                break;
+                                            }
+                                        }
+                                        else {
+                                            break;
+                                        }
+                                    }
+                                    else if (doctype == 4)
+                                    {
+                                        System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t \tList of Orthopedic specialist doctors:");
+                                        System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t \tNo.\tName\tAge \tGender\tPhone number\tTime \t\tCity\t\tDays\n" +
+                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t1.\tHalima\t32\t\tFemale\t017123456789\t12am – 4pm\tSylhet\t\tSun – Fri\n" +
+                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t2.\tAsif\t40\t\tMale\t018123456789\t7pm – 12pm\tDhaka\t\tMon-Wed\n" +
+                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t3.\tRahi\t28\t\tMale\t019987654123\t12am – 4pm\tSylhet\t\tSun – Fri");
+
+
+                                        System.out.print("\t\t\t\t\t\t\t\t\t\t\t\t \tEnter your choice(1-5): ");
+
+                                        int ortho = input.nextInt();
+
+                                        if(ortho == 1)
+                                        {
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
+
+                                            lg.confirm();
+
+                                            int halima = input.nextInt();
+                                            if(halima == 1)
+                                            {
+                                                System.out.println("Confirm Payment: ");
+
+
+                                            }
+                                            else {
+                                                break;
+                                            }
+                                        }
+                                        else if(ortho == 2)
+                                        {
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
+
+                                            lg.confirm();
+
+                                            int asif = input.nextInt();
+                                            if(asif == 1)
+                                            {
+                                                System.out.println("Confirm Payment: ");
+
+                                            }
+                                            else {
+                                                break;
+                                            }
+                                        }
+
+                                        else if(ortho == 3)
+                                        {
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
+
+                                            lg.confirm();
+
+                                            int rahi = input.nextInt();
+                                            if(rahi == 1)
+                                            {
+                                                System.out.println("Confirm Payment: ");
+
+
+                                            }
+                                            else {
+                                                break;
+                                            }
+                                        }
+                                        else {
+                                            break;
+                                        }
+                                    }
+                                    else if (doctype == 5)
+                                    {
+                                        System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t \tList of Neurology specialist doctors:");
+                                        System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t \tNo.\tName\tAge \tGender\tPhone number\tTime \t\tCity\t\tDays\n" +
+                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t1.\tShakkor\t27\t\tMale\t017123456749\t12am – 4pm\tHabiganj\tSun – Fri\n" +
+                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t2.\tProtiva\t33\t\tFemale\t018123456729\t7pm – 12pm\tDhaka\t\tMon-Tue\n" +
+                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t3.\tTanim\t61\t\ttMale\t019987654123\t12am – 4pm\tSylhet\t\tThu – Fri\n" +
+                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t4.\tBristy\t26\t\tFemale\t017748596123\t10am – 1pm\tSylhet\t\tMon-Tue\n" +
+                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t5.\tAfrija \t39\t\tFemale\t013965847321\t2pm – 6 pm\tDhaka\t\tSun – Fri");
+
+                                        System.out.print("\t\t\t\t\t\t\t\t\t\t\t\t \tEnter your choice(1-5): ");
+
+                                        int nuro = input.nextInt();
+
+                                        if(nuro == 1)
+                                        {
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
+
+                                            lg.confirm();
+
+                                            int sohel = input.nextInt();
+                                            if(sohel == 1)
+                                            {
+                                                System.out.println("Confirm Payment: ");
+
+
+                                            }
+                                            else {
+                                                break;
+                                            }
+                                        }
+                                        else if(nuro == 2)
+                                        {
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
+
+                                            lg.confirm();
+
+                                            int resham = input.nextInt();
+                                            if(resham == 1)
+                                            {
+                                                System.out.println("Confirm Payment: ");
+
+
+                                            }
+                                            else {
+                                                break;
+                                            }
+                                        }
+
+                                        else if(nuro == 3)
+                                        {
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
+
+                                            lg.confirm();
+
+                                            int ravi = input.nextInt();
+                                            if(ravi == 1)
+                                            {
+                                                System.out.println("Confirm Payment: ");
+
+
+                                            }
+                                            else {
+                                                break;
+                                            }
+                                        }
+                                        else {
+                                            break;
+                                        }
+
+
+                                    }
+                                    else
+                                    {
+                                        break;
+                                    }
 
                                 }
+
 
                             }
                         }
