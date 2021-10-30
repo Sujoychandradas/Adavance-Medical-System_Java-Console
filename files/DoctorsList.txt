@@ -1,45 +1,46 @@
-									Doctor’s List:
-									
-				>> Here we gathered every type of doctor’s list. You can choose your desired doctor.
+														 			************ Doctor List *************
+														 
+																	
+												>> Here we gathered every type of doctor’s list. You can choose your desired doctor.
 
-				Medicine:
+												Medicine:
 
-				No.	Name	Age 	Gender	Phone number	   Time 	City		Days
-				1.	Murad	27	Male	017123456749	12am – 4pm	Habiganj	Sun – Fri
-				2.	Fariha	33	Female	018123456729	7pm – 12pm	Dhaka		Mon-Tue
-				3.	Rotan	61	Male	019987654123	12am – 4pm	Sylhet		Thu – Fri
-				4.	Kashfi	26	Female	017748596123	10am – 1pm	Sylhet		Mon-Tue
-				5.	Anika 	39	Female	013965847321	2pm – 6 pm	Dhaka		Sun – Fri
+												No.	Name	Age 	Gender	Phone number	   Time 	City		Days
+												1.	Murad	27	Male	017123456749	12am – 4pm	Habiganj	Sun – Fri
+												2.	Fariha	33	Female	018123456729	7pm – 12pm	Dhaka		Mon-Tue
+												3.	Rotan	61	Male	019987654123	12am – 4pm	Sylhet		Thu – Fri
+												4.	Kashfi	26	Female	017748596123	10am – 1pm	Sylhet		Mon-Tue
+												5.	Anika 	39	Female	013965847321	2pm – 6 pm	Dhaka		Sun – Fri
 
-				Cardiologist:
+												Cardiologist:
 
-				No.	Name	Age 	Gender	Phone number	   Time 	City		Days
-				1.	Sohel	32	Male	017123456789	12am – 4pm	Sylhet		Sun – Fri
-				2.	Resham	29	Female	018123456789	7pm – 12pm	Dhaka		Mon-Wed
-				3.	Ravi	56	Male	019987654123	12am – 4pm	Sylhet		Sun – Fri
+												No.	Name	Age 	Gender	Phone number	   Time 	City		Days
+												1.	Sohel	32	Male	017123456789	12am – 4pm	Sylhet		Sun – Fri
+												2.	Resham	29	Female	018123456789	7pm – 12pm	Dhaka		Mon-Wed
+												3.	Ravi	56	Male	019987654123	12am – 4pm	Sylhet		Sun – Fri
 
-				Gynecologist:
+												Gynecologist:
 
-				No.	Name	Age 	Gender	Phone number	   Time 	City		Days
-				1.	Marufa	27	Female	017123456749	12am – 4pm	Habiganj	Sun – Fri
-				2.	Shopna	33	Female	018123456729	7pm – 12pm	Dhaka		Mon-Tue
-				3.	Roshni	61	Female	019987654123	12am – 4pm	Sylhet		Thu – Fri
-				4.	Nilima	26	Female	017748596123	10am – 1pm	Sylhet		Mon-Tue
-				5.	Oyshee  39	Female	013965847321	2pm – 6 pm	Dhaka		Sun – Fri
-				6.	Liza	36	Female	017369852147	7pm – 12pm	Dhaka		Mon-Wed
+												No.	Name	Age 	Gender	Phone number	   Time 	City		Days
+												1.	Marufa	27	Female	017123456749	12am – 4pm	Habiganj	Sun – Fri
+												2.	Shopna	33	Female	018123456729	7pm – 12pm	Dhaka		Mon-Tue
+												3.	Roshni	61	Female	019987654123	12am – 4pm	Sylhet		Thu – Fri
+												4.	Nilima	26	Female	017748596123	10am – 1pm	Sylhet		Mon-Tue
+												5.	Oyshee  39	Female	013965847321	2pm – 6 pm	Dhaka		Sun – Fri
+												6.	Liza	36	Female	017369852147	7pm – 12pm	Dhaka		Mon-Wed
 
-				Orthopedic:
+												Orthopedic:
 
-				No.	Name	Age 	Gender	Phone number	   Time 	City		Days
-				1.	Halima	32	Female	017123456789	12am – 4pm	Sylhet		Sun – Fri
-				2.	Asif	40	Male	018123456789	7pm – 12pm	Dhaka		Mon-Wed
-				3.	Rahi	28	Male	019987654123	12am – 4pm	Sylhet		Sun – Fri
+												No.	Name	Age 	Gender	Phone number	   Time 	City		Days
+												1.	Halima	32	Female	017123456789	12am – 4pm	Sylhet		Sun – Fri
+												2.	Asif	40	Male	018123456789	7pm – 12pm	Dhaka		Mon-Wed
+												3.	Rahi	28	Male	019987654123	12am – 4pm	Sylhet		Sun – Fri
 
-				Neurologist:
+												Neurologist:
 
-				No.	Name	Age 	Gender	Phone number	   Time 	City 		Days
-				1.	Shakkor 27	Male	017123456749	12am – 4pm	Habiganj	Sun – Fri
-				2.	Protiva 33	Female	018123456729	7pm – 12pm	Dhaka		Mon-Tue
-				3.	Taneam	61	Male	019987654123	12am – 4pm	Sylhet		Thu – Fri
-				4.	Kashem	26	Male	017748596123	10am – 1pm	Sylhet		Mon-Tue
-				5.	Afroja	39	Female	013965847321	2pm – 6 pm	Dhaka		Sun – Fri
+												No.	Name	Age 	Gender	Phone number	   Time 	City 		Days
+												1.	Shakkor 27	Male	017123456749	12am – 4pm	Habiganj	Sun – Fri
+												2.	Protiva 33	Female	018123456729	7pm – 12pm	Dhaka		Mon-Tue
+												3.	Taneam	61	Male	019987654123	12am – 4pm	Sylhet		Thu – Fri
+												4.	Kashem	26	Male	017748596123	10am – 1pm	Sylhet		Mon-Tue
+												5.	Afroja	39	Female	013965847321	2pm – 6 pm	Dhaka		Sun – Fri

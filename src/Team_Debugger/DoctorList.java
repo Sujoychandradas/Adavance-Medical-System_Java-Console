@@ -14,7 +14,7 @@ public class DoctorList {
             myFile.createNewFile();
 
         } catch (IOException e) {
-            System.out.println("cannot create a new file!!!!!");
+            System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t************ File not Found..*************");
             e.printStackTrace();
         }
 

@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         // write your code here
         LoginDisplay lg = new LoginDisplay();
-        Start start = new Start();
+        Ambulance ambulance = new Ambulance();
 
         Scanner input = new Scanner(System.in);
 
@@ -118,7 +118,7 @@ public class Main {
 
             if (user == 1)//Registration
             {
-                System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t***************** REGISTRATION PAGE  ***********************");
+                System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t******* REGISTRATION PAGE  *********");
                 String s = input.nextLine();
 
                 System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t->\tUser name : ");
@@ -133,7 +133,7 @@ public class Main {
                 int size = name.size();
 
                 for (int j = 0; j < size; j++) {
-                    if (userName.equals(name.get(j)) && userName.equals("admin")) {
+                    if (userName.equals(name.get(j)) && userName.equals(password.get(j))) {
                         System.out.println("\n\t\t\t\t\t\t\tPlease enter a new user name. This is used by other. You are not registered. \n");
                         name_temp = userName;
                     }
@@ -158,33 +158,7 @@ public class Main {
                     String phone = input.nextLine();
 
                     if (phone.length() == 9) {
-                        if ((phone.charAt(0) == '0' || phone.charAt(0) == '1' || phone.charAt(0) == '2' || phone.charAt(0) == '3' || phone.charAt(0) == '4'
-                                || phone.charAt(0) == '5' || phone.charAt(0) == '6' || phone.charAt(0) == '7' || phone.charAt(0) == '8' || phone.charAt(0) == '9') &&
-
-                                (phone.charAt(1) == '0' || phone.charAt(1) == '1' || phone.charAt(1) == '2' || phone.charAt(1) == '3' || phone.charAt(1) == '4'
-                                        || phone.charAt(1) == '5' || phone.charAt(1) == '6' || phone.charAt(1) == '7' || phone.charAt(1) == '8' || phone.charAt(1) == '9') &&
-
-                                (phone.charAt(2) == '0' || phone.charAt(2) == '1' || phone.charAt(2) == '2' || phone.charAt(2) == '3' || phone.charAt(2) == '4'
-                                        || phone.charAt(2) == '5' || phone.charAt(2) == '6' || phone.charAt(2) == '7' || phone.charAt(2) == '8' || phone.charAt(2) == '9') &&
-
-                                (phone.charAt(3) == '0' || phone.charAt(3) == '1' || phone.charAt(3) == '2' || phone.charAt(3) == '3' || phone.charAt(3) == '4'
-                                        || phone.charAt(3) == '5' || phone.charAt(3) == '6' || phone.charAt(3) == '7' || phone.charAt(3) == '8' || phone.charAt(3) == '9') &&
-
-                                (phone.charAt(4) == '0' || phone.charAt(4) == '1' || phone.charAt(4) == '2' || phone.charAt(4) == '3' || phone.charAt(4) == '4'
-                                        || phone.charAt(4) == '5' || phone.charAt(4) == '6' || phone.charAt(4) == '7' || phone.charAt(4) == '8' || phone.charAt(4) == '9') &&
-
-                                (phone.charAt(5) == '0' || phone.charAt(5) == '1' || phone.charAt(5) == '2' || phone.charAt(5) == '3' || phone.charAt(5) == '4'
-                                        || phone.charAt(5) == '5' || phone.charAt(5) == '6' || phone.charAt(5) == '7' || phone.charAt(5) == '8' || phone.charAt(5) == '9') &&
-
-                                (phone.charAt(6) == '0' || phone.charAt(6) == '1' || phone.charAt(6) == '2' || phone.charAt(6) == '3' || phone.charAt(6) == '4'
-                                        || phone.charAt(6) == '5' || phone.charAt(6) == '6' || phone.charAt(6) == '7' || phone.charAt(6) == '8' || phone.charAt(6) == '9') &&
-
-                                (phone.charAt(7) == '0' || phone.charAt(7) == '1' || phone.charAt(7) == '2' || phone.charAt(7) == '3' || phone.charAt(7) == '4'
-                                        || phone.charAt(7) == '5' || phone.charAt(7) == '6' || phone.charAt(7) == '7' || phone.charAt(7) == '8' || phone.charAt(7) == '9') &&
-
-                                (phone.charAt(8) == '0' || phone.charAt(8) == '1' || phone.charAt(8) == '2' || phone.charAt(8) == '3' || phone.charAt(8) == '4'
-                                        || phone.charAt(8) == '5' || phone.charAt(8) == '6' || phone.charAt(8) == '7' || phone.charAt(8) == '8' || phone.charAt(8) == '9')
-                        ) {
+                      {
                             String full_number = "01" + phone;
                             username.add(userName);
                             password.add(pass);
@@ -192,25 +166,21 @@ public class Main {
                             gender.add(gen);
                             phone1.add(phone);
                             name.add(fullname);
-                            System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t~~~~ You are now registered ~~~~\n");
+                            System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t~~ You are now registered ~~\n");
 
-                        } else {
-                            System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t# Please entered a valid number.");
-                            System.out.print("\t\t\t\t\t\t\t\t\t\t\t\t->\tEnter Your Phone Number : +880 1");
-                            phone = input.nextLine();
                         }
                     }
                     else {
                         System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t# You entered a wrong number. You are not registered.");
                     }
-                        name_temp = "";
-                        pass_temp = "";
+                    name_temp = "";
+                    pass_temp = "";
                 }
             }//end user 1
             else if(user == 2)
             {
                 String y = input.nextLine();
-                System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t******************* LOGIN PAGE  *************************");
+                System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t************ LOGIN PAGE *************");
                 System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t->\tUser name: ");
                 String name2 = input.nextLine();
                 System.out.print("\t\t\t\t\t\t\t\t\t\t\t\t->\tpassword: ");
@@ -223,7 +193,7 @@ public class Main {
                 {
                     if(name2.equals(username.get(j)) && pass2.equals(password.get(j)))
                     {
-                        System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t~~~~LOGIN SUCCESSFULLY!~~~~\n");
+                        System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t************ ~~~LOGIN SUCCESSFULLY!~ *************\n");
                         temp_name2 = name2;
                         temp_pass2 = pass2;
 
@@ -237,128 +207,138 @@ public class Main {
                         for(int x = 0; x == 0; )
                         {
                             lg.serviceTry();// 1. Yes \n 2. No");
-                            System.out.print("\t\t\t\t\t\t\t\t\t\t\t\t\tEnter your choose (1-2):  ");
+                            System.out.print("\t\t\t\t\t\t\t\t\t\t\t\t\t->\tEnter your choose (1-2):  ");
                             int service = input.nextInt();
 
                             if(service == 1)
                             {
                                 lg.startDisplay();
-                                System.out.print("\t\t\t\t\t\t\t\t\t\t\t\t\tEnter your choose (1-5):  ");
+                                System.out.print("\t\t\t\t\t\t\t\t\t\t\t\t\t->\tEnter your choose (1-5):  ");
                                 int work = input.nextInt();
 
                                 if (work == 1)
                                 {
+                                    System.out.println();
+                                    System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t..........................................................................\n");
                                     doctorList.displayDoctor();
                                 }
                                 else if(work == 2)
                                 {
-                                    System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t*\tWhat kind of doctor do you want?");
-                                    System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t \t1.Medicine");
-                                    System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t \t2.Cardiologist");
-                                    System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t \t3.Gynecologist");
-                                    System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t \t4.Orthopedic");
-                                    System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t \t5.Neurologist");
-                                    System.out.print("\t\t\t\t\t\t\t\t\t\t\t\t \tEnter your choice(1-5): ");
+                                    System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t..........................................................................\n");
+                                    System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t************ DOCTOR TYPE *************");
+                                    System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t->\t1.Medicine");
+                                    System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t->\t2.Cardiologist");
+                                    System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t->\t3.Gynecologist");
+                                    System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t->\t4.Orthopedic");
+                                    System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t->\t5.Neurologist");
+                                    System.out.print("\t\t\t\t\t\t\t\t\t\t\t\t->\tEnter your choice(1-5): ");
 
                                     int doctype;
                                     doctype = input.nextInt();
                                     if (doctype == 1)
                                     {
-                                        System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t \tList of Medicine specialist doctors:");
-                                        System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t \tNo.\tName\tAge \tGender\tPhone number\tTime \t\tCity\t\tDays\n" +
-                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t1.\tMurad\t27\t\tMale\t017123456749\t12am – 4pm\tHabiganj\tSun – Fri\n" +
-                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t2.\tFariha\t33\t\tFemale\t018123456729\t7pm – 12pm\tDhaka\t\tMon-Tue\n" +
-                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t3.\tRotan\t61\t\ttMale\t019987654123\t12am – 4pm\tSylhet\t\tThu – Fri\n" +
-                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t4.\tKashfi\t26\t\tFemale\t017748596123\t10am – 1pm\tSylhet\t\tMon-Tue\n" +
-                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t5.\tAnika \t39\t\tFemale\t013965847321\t2pm – 6 pm\tDhaka\t\tSun – Fri");
+                                        System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t..........................................................................\n");
+                                        System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t************ List of Medicine Specialist Doctors *************");
+                                        System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t \tNo.\tName\tAge \tGender\tPhone number\tTime \t\tCity\t\tDays\n" +
+                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t1.\tDr.Murad\t27\t\tMale\t017123456749\t12am – 4pm\tHabiganj\tSun – Fri\n" +
+                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t2.\tDr.Fariha\t33\t\tFemale\t018123456729\t7pm – 12pm\tDhaka\t\tMon-Tue\n" +
+                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t3.\tDr.Rotan\t61\t\ttMale\t019987654123\t12am – 4pm\tSylhet\t\tThu – Fri\n" +
+                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t4.\tDr.Kashfi\t26\t\tFemale\t017748596123\t10am – 1pm\tSylhet\t\tMon-Tue\n" +
+                                                "\t\t\t\t\t\t\t\t\t\t\t\t \t5.\tDr.Anika \t39\t\tFemale\t013965847321\t2pm – 6 pm\tDhaka\t\tSun – Fri");
 
-                                        System.out.print("\t\t\t\t\t\t\t\t\t\t\t\t \tEnter your choice(1-5): ");
+                                        System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tEnter your choice(1-5): ");
 
                                         int med = input.nextInt();
-
                                         if(med == 1)
                                         {
-                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
-
-                                            lg.confirm();
-
-                                            int murad = input.nextInt();
-                                            if(murad == 1)
-                                            {
-                                                System.out.println("Confirm Payment: ");
+                                            System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t..........................................................................\n");
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0)+ " and You have to pay 500tk for appointment.\n");
 
 
+                                            System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t************ CONFIRM PAYMENT *************\n");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1. YES");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2. NO");
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t\tEnter your choice(1-2): ");
+                                            int n = input.nextInt();
+
+                                            if(n==1){
+                                                System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t..........................................................................\n");
+                                                Payment payment = new Payment(1);
                                             }
-                                            else {
+                                            else{
                                                 break;
                                             }
                                         }
                                         else if(med == 2)
                                         {
-                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
+                                            System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t..........................................................................\n");
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(1)+ " and You have to pay 500tk for appointment.\n");
 
-                                            lg.confirm();
+                                            System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t************ CONFIRM PAYMENT *************\n");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1. YES");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2. NO");
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t\tEnter your choice(1/2): ");
+                                            int n = input.nextInt();
 
-                                            int fariha = input.nextInt();
-                                            if(fariha == 1)
-                                            {
-                                                System.out.println("Confirm Payment: ");
-
-
+                                            if(n==1){
+                                                Payment payment = new Payment(1);
                                             }
-                                            else {
+                                            else{
                                                 break;
                                             }
                                         }
 
                                         else if(med == 3)
                                         {
-                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
-
-                                            lg.confirm();
-
-                                            int rotan = input.nextInt();
-                                            if(rotan == 1)
-                                            {
-                                                System.out.println("Confirm Payment: ");
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(2)+ " and You have to pay 500tk for appointment.\n");
 
 
+                                            System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t************ CONFIRM PAYMENT *************\n");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1. YES");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2. NO");
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t\tEnter your choice(1/2): ");
+                                            int n = input.nextInt();
+
+                                            if(n==1){
+                                                Payment payment = new Payment(1);
                                             }
-                                            else {
+                                            else{
                                                 break;
                                             }
                                         }
                                         else if(med == 4)
                                         {
-                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
-
-                                            lg.confirm();
-
-                                            int kashfi = input.nextInt();
-                                            if(kashfi == 1)
-                                            {
-                                                System.out.println("Confirm Payment: ");
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(3)+ " and You have to pay 500tk for appointment.\n");
 
 
+                                            System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t************ CONFIRM PAYMENT *************\n");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1. YES");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2. NO");
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t\tEnter your choice(1/2): ");
+                                            int n = input.nextInt();
+
+                                            if(n==1){
+                                                Payment payment = new Payment(1);
                                             }
-                                            else {
+                                            else{
                                                 break;
                                             }
                                         }
                                         else if(med == 5)
                                         {
-                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
-
-                                            lg.confirm();
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(4)+ " and You have to pay 500tk for appointment.\n");
 
                                             int anika = input.nextInt();
-                                            if(anika == 1)
-                                            {
-                                                System.out.println("Confirm Payment: ");
+                                            System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t************ CONFIRM PAYMENT *************\n");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1. YES");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2. NO");
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t\tEnter your choice(1/2): ");
+                                            int n = input.nextInt();
 
-
+                                            if(n==1){
+                                                Payment payment = new Payment(1);
                                             }
-                                            else {
+                                            else{
                                                 break;
                                             }
                                         }else
@@ -381,53 +361,55 @@ public class Main {
 
                                         if(car == 1)
                                         {
-                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ cardiologist.get(0)+ " and You have to pay 500tk for appointment.\n");
 
-                                            lg.confirm();
+                                            System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t************ CONFIRM PAYMENT *************\n");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1. YES");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2. NO");
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t\tEnter your choice(1/2): ");
+                                            int n = input.nextInt();
 
-                                            int sohel = input.nextInt();
-                                            if(sohel == 1)
-                                            {
-                                                System.out.println("Confirm Payment: ");
-
-
+                                            if(n==1){
+                                                Payment payment = new Payment(1);
                                             }
-                                            else {
+                                            else{
                                                 break;
                                             }
                                         }
                                         else if(car == 2)
                                         {
-                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
-
-                                            lg.confirm();
-
-                                            int resham = input.nextInt();
-                                            if(resham == 1)
-                                            {
-                                                System.out.println("Confirm Payment: ");
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ cardiologist.get(1)+ " and You have to pay 500tk for appointment.\n");
 
 
+                                            System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t************ CONFIRM PAYMENT *************\n");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1. YES");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2. NO");
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t\tEnter your choice(1/2): ");
+                                            int n = input.nextInt();
+
+                                            if(n==1){
+                                                Payment payment = new Payment(1);
                                             }
-                                            else {
+                                            else{
                                                 break;
                                             }
                                         }
 
                                         else if(car == 3)
                                         {
-                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
-
-                                            lg.confirm();
-
-                                            int ravi = input.nextInt();
-                                            if(ravi == 1)
-                                            {
-                                                System.out.println("Confirm Payment: ");
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(2)+ " and You have to pay 500tk for appointment.\n");
 
 
+                                            System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t************ CONFIRM PAYMENT *************\n");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1. YES");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2. NO");
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t\tEnter your choice(1/2): ");
+                                            int n = input.nextInt();
+
+                                            if(n==1){
+                                                Payment payment = new Payment(1);
                                             }
-                                            else {
+                                            else{
                                                 break;
                                             }
                                         }
@@ -451,52 +433,56 @@ public class Main {
 
                                         if(gyno == 1)
                                         {
-                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
-
-                                            lg.confirm();
-
-                                            int murad = input.nextInt();
-                                            if(murad == 1)
-                                            {
-                                                System.out.println("Confirm Payment: ");
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ gynecologist.get(0)+" and You have to pay 500tk for appointment.\n");
 
 
+                                            System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t************ CONFIRM PAYMENT *************\n");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1. YES");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2. NO");
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t\tEnter your choice(1/2): ");
+                                            int n = input.nextInt();
+
+                                            if(n==1){
+                                                Payment payment = new Payment(1);
                                             }
-                                            else {
+                                            else{
                                                 break;
                                             }
                                         }
                                         else if(gyno == 2)
                                         {
-                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ gynecologist.get(1)+" and You have to pay 500tk for appointment.\n");
 
-                                            lg.confirm();
 
-                                            int fariha = input.nextInt();
-                                            if(fariha == 1)
-                                            {
-                                                System.out.println("Confirm Payment: ");
+                                            System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t************ CONFIRM PAYMENT *************\n");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1. YES");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2. NO");
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t\tEnter your choice(1/2): ");
+                                            int n = input.nextInt();
 
+                                            if(n==1){
+                                                Payment payment = new Payment(1);
                                             }
-                                            else {
+                                            else{
                                                 break;
                                             }
                                         }
 
                                         else if(gyno == 3)
                                         {
-                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
-
-                                            lg.confirm();
-
-                                            int rotan = input.nextInt();
-                                            if(rotan == 1)
-                                            {
-                                                System.out.println("Confirm Payment: ");
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ gynecologist.get(2)+" and You have to pay 500tk for appointment.\n");
 
 
+                                            System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t************ CONFIRM PAYMENT *************\n");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1. YES");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2. NO");
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t\tEnter your choice(1/2): ");
+                                            int n = input.nextInt();
+
+                                            if(n==1){
+                                                Payment payment = new Payment(1);
                                             }
-                                            else {
+                                            else{
                                                 break;
                                             }
                                         }
@@ -519,52 +505,53 @@ public class Main {
 
                                         if(ortho == 1)
                                         {
-                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ gynecologist.get(3)+" and You have to pay 500tk for appointment.\n");
 
-                                            lg.confirm();
+                                            System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t************ CONFIRM PAYMENT *************\n");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1. YES");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2. NO");
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t\tEnter your choice(1/2): ");
+                                            int n = input.nextInt();
 
-                                            int halima = input.nextInt();
-                                            if(halima == 1)
-                                            {
-                                                System.out.println("Confirm Payment: ");
-
-
+                                            if(n==1){
+                                                Payment payment = new Payment(1);
                                             }
-                                            else {
+                                            else{
                                                 break;
                                             }
                                         }
                                         else if(ortho == 2)
                                         {
-                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ gynecologist.get(4)+" and You have to pay 500tk for appointment.\n");
 
-                                            lg.confirm();
+                                            System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t************ CONFIRM PAYMENT *************\n");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1. YES");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2. NO");
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t\tEnter your choice(1/2): ");
+                                            int n = input.nextInt();
 
-                                            int asif = input.nextInt();
-                                            if(asif == 1)
-                                            {
-                                                System.out.println("Confirm Payment: ");
-
+                                            if(n==1){
+                                                Payment payment = new Payment(1);
                                             }
-                                            else {
+                                            else{
                                                 break;
                                             }
                                         }
 
                                         else if(ortho == 3)
                                         {
-                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ gynecologist.get(5)+" and You have to pay 500tk for appointment.\n");
 
-                                            lg.confirm();
+                                            System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t************ CONFIRM PAYMENT *************\n");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1. YES");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2. NO");
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t\tEnter your choice(1/2): ");
+                                            int n = input.nextInt();
 
-                                            int rahi = input.nextInt();
-                                            if(rahi == 1)
-                                            {
-                                                System.out.println("Confirm Payment: ");
-
-
+                                            if(n==1){
+                                                Payment payment = new Payment(1);
                                             }
-                                            else {
+                                            else{
                                                 break;
                                             }
                                         }
@@ -588,53 +575,89 @@ public class Main {
 
                                         if(nuro == 1)
                                         {
-                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ neurologist.get(0)+" and You have to pay 500tk for appointment.\n");
 
-                                            lg.confirm();
 
                                             int sohel = input.nextInt();
-                                            if(sohel == 1)
-                                            {
-                                                System.out.println("Confirm Payment: ");
+                                            System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t************ CONFIRM PAYMENT *************\n");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1. YES");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2. NO");
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t\tEnter your choice(1/2): ");
+                                            int n = input.nextInt();
 
-
+                                            if(n==1){
+                                                Payment payment = new Payment(1);
                                             }
-                                            else {
+                                            else{
                                                 break;
                                             }
                                         }
                                         else if(nuro == 2)
                                         {
-                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ neurologist.get(1)+" and You have to pay 500tk for appointment.\n");
 
-                                            lg.confirm();
+                                            System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t************ CONFIRM PAYMENT *************\n");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1. YES");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2. NO");
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t\tEnter your choice(1/2): ");
+                                            int n = input.nextInt();
 
-                                            int resham = input.nextInt();
-                                            if(resham == 1)
-                                            {
-                                                System.out.println("Confirm Payment: ");
-
-
+                                            if(n==1){
+                                                Payment payment = new Payment(1);
                                             }
-                                            else {
+                                            else{
                                                 break;
                                             }
                                         }
 
                                         else if(nuro == 3)
                                         {
-                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ medicine.get(0));
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ neurologist.get(2)+" and You have to pay 500tk for appointment.\n");
+                                            System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t************ CONFIRM PAYMENT *************\n");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1. YES");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2. NO");
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t\tEnter your choice(1/2): ");
+                                            int n = input.nextInt();
 
-                                            lg.confirm();
-
-                                            int ravi = input.nextInt();
-                                            if(ravi == 1)
-                                            {
-                                                System.out.println("Confirm Payment: ");
-
-
+                                            if(n==1){
+                                                Payment payment = new Payment(1);
                                             }
-                                            else {
+                                            else{
+                                                break;
+                                            }
+                                        }
+                                        else if(nuro == 4)
+                                        {
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ neurologist.get(3)+" and You have to pay 500tk for appointment.\n");
+
+                                            System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t************ CONFIRM PAYMENT *************\n");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1. YES");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2. NO");
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t\tEnter your choice(1/2): ");
+                                            int n = input.nextInt();
+
+                                            if(n==1){
+                                                Payment payment = new Payment(1);
+                                            }
+                                            else{
+                                                break;
+                                            }
+                                        }
+                                        else if(nuro == 5)
+                                        {
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t \tYou have Selected : "+ neurologist.get(4)+" and You have to pay 500tk for appointment.\n");
+
+
+                                            System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t************ CONFIRM PAYMENT *************\n");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1. YES");
+                                            System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2. NO");
+                                            System.out.print("\n\t\t\t\t\t\t\t\t\t\t\t\t\tEnter your choice(1/2): ");
+                                            int n = input.nextInt();
+
+                                            if(n==1){
+                                                Payment payment = new Payment(1);
+                                            }
+                                            else{
                                                 break;
                                             }
                                         }
@@ -650,12 +673,36 @@ public class Main {
                                     }
 
                                 }
+                                else if(work == 3)
+                                {
 
+                                    Medicine medicine1 = new Medicine();
+                                }
 
+                                else if(work == 4)
+                                {
+                                    ambulance.ambulanceService();
+                                }
+                                else {
+                                    break;
+                                }
+
+                            }
+                            else{
+                                break;
                             }
                         }
                     }
                 }
+            }else if(user == 3)
+            {
+                lg.abouSERvice();
+            }
+            else {
+                System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t*************************************************************************************\n");
+                System.out.println("\t\t\t\t\t\t\t\t\t\t\t*\t\t\t\t**** ~~~~ THANK YOU FOR USEING OUR SERVICE! ~~~~ ****\t\t\t\t*");
+                System.out.println("\n\t\t\t\t\t\t\t\t\t\t\t*************************************************************************************\n");
+                break;
             }
         }
 
